@@ -1,19 +1,21 @@
-CakePHP-HTTPSocket-POST-File
+CakePHP-HttpSocket-POST-File
 ============================
 
-Extension of the CakePHP HTTPSocket Class with additional functionality for POSTing files
+Extension of the CakePHP HttpSocket Class with additional functionality for POSTing files.
 
 Usage
 =====
 
 1.  Import the file in your Model or Controller:
         
-        App::uses('HttpSocketWithFile', 'Vendor');
+        // Remember to place the file in your app/Vendor folder of your CakePHP project
+		App::uses('HttpSocketWithFile', 'Vendor');
 
 2.  Instantiate the class:
 		
+		// Simple enough
 		$HttpSocketWithFile = new HttpSocketWithFile();
-		
+
 3.  Use as normal with the additional method for posting a file:
 
 		$postData = array(
