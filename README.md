@@ -7,9 +7,13 @@ Usage
 =====
 
 1.  Import the file in your Model or Controller:
+        
         App::uses('HttpSocketWithFile', 'Vendor');
+
 2.  Instantiate the class:
+		
 		$HttpSocketWithFile = new HttpSocketWithFile();
+		
 3.  Use as normal with the additional method for posting a file:
 
 		$postData = array(
