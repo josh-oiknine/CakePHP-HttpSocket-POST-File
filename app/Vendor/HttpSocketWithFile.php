@@ -16,7 +16,7 @@ class HttpSocketWithFile extends HttpSocket {
         curl_setopt($ch, CURLOPT_URL, urlencode($url));
         curl_setopt($ch, CURLOPT_POST, true);
 
-        $post = arra();
+        $post = array();
 
         foreach ($data['file'] as $key => $value) {
             $post[$key] = "@".$value;
